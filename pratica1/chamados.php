@@ -1,7 +1,7 @@
 <?php
   include "db.php";
-  $sql = "Select id_chamados, status_chamado, id_colaborador from chamados;";
-  $result = $conn($sql);
+  $sql_chamado = "Select * from chamados;";
+  $result = $conn($sql_chamado);
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
             <td>Status</td>
             <td>Editar</td>
         </tr>
-        <?php while ($row = mysqli_fetch_assoc($result)){
+        <?php while ($row -> fetch_assoc($result)){
         ?>
         <tr>
             <td><?php echo $row['id_chamado']?></td>
