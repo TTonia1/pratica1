@@ -18,7 +18,9 @@
         <tr>
             <td>id chamado</td>
             <td>Colaborador</td>
+            <td>Cliente</td>
             <td>Status</td>
+            <td>Criticidade</td>
             <td>Ferramentas</td>
         </tr>
         <?php while ($row = $query -> fetch_assoc()){
@@ -26,6 +28,8 @@
         <tr>
             <td><?php echo $row['id_chamados']?></td>
             <td><?php echo $row['id_colaborador']?></td>
+            <td><?php echo $row['id_cliente']?></td>
+            <td><?php echo $row['criticidade']?></td>
             <td><?php echo $row['status_chamado']?></td>
             <td>Editar</td>
         </tr>
