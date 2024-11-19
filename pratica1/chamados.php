@@ -31,7 +31,9 @@
             <td><?php echo $row['id_cliente']?></td>
             <td><?php echo $row['criticidade']?></td>
             <td><?php echo $row['status_chamado']?></td>
-            <td>Editar</td>
+            <td>
+                <a href="/update_chamado.php?id_chamados=<?php echo $row['id_chamados']?>">Editar</a>
+            </td>
         </tr>
         <?php }?>
     </table>
